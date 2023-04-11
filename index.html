@@ -1,9 +1,111 @@
 
+
 <html>
     <head>
-        <title>My first code</title>
+        <title>Basic-Layout-Design</title>
+        <style>
+            body{
+                font-family:  Arial, sans-serif;
+                background-color: antiquewhite;
+                margin:0;
+                padding:0;
+            }
+            :root{
+                --main-color:red;
+            }
+            #wrapper{
+                border: 2px solid black;
+                width: 1000px;
+               background-color: white;
+               margin: 0 auto;
+            }
+            #header{
+                background-color:var(--main-color);
+                height:100px;
+                padding: 10px;
+            }
+            #menu{
+                background-color:bisque;
+                margin: 0;
+                padding: 0;
+            }
+            #menu ul{
+                margin: 0;
+                padding: 0;
+            }
+            #menu li{
+                display: inline-block;
+                margin: 10px;
+                padding: 5px;
+            }
+            #menu li a{
+                text-decoration: none;
+                color: black;
+                padding: 10px;
+                
+            }
+            #menu li a:hover{
+                background-color:var(--main-color);
+            }
+            #content{
+                background-color: burlywood;
+                width: 800px;
+                float: left;
+                min-height: 400px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            #sidebar{
+                background-color: cadetblue;
+                width: 200px;
+                float: right;
+                min-height: 400px;
+            }
+            #sidebar ul li a{
+                text-decoration: none;
+                color:var(--main-color);
+            }
+            #footer{
+                clear: both;
+                background-color:pink ;
+                text-align: right;
+                padding: 5px 10px;
+            }
+        </style>
     </head>
+
     <body>
-        My name is Saurav
+        <div id="wrapper" >
+            <div id="header">
+                <h1>Saurav Singh</h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="mailto:ss3333165@gmail.com?cc=saurav.s9910@gmail.com&subject=Hello World&body=This is just testing"">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <h2>Design-Basic-Layout</h2>
+                <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+                <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+  
+            </div>
+            <div id="sidebar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="mailto:ss3333165@gmail.com?cc=saurav.s9910@gmail.com&subject=Hello World&body=This is just testing"">Contact Us</a></li>  
+                </ul>
+            </div>
+            <div id="footer">
+                Sauravsingh@copyright 2023.
+            </div>
+        </div>
     </body>
 </html>
